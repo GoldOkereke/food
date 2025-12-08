@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 // const ITEM_SIZE = 240;
 // const ITEM_DISTANCE = 40;
 
-// const CubicGallery = ({ imageData }) => {
+const CubicGallery = ({ imageData }) => {return 2}
 //     const galleryRef = useRef(null);
 //     const animationIdRef = useRef(0);
 //     const [fullscreenImage, setFullscreenImage] = useState(null);
