@@ -1,5 +1,5 @@
-// import { useEffect, useRef, useState } from "react";
-// import { motion, AnimatePresence } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 // // Constants
 // const FACE_SIZE = 3;
@@ -238,4 +238,4 @@
 //     );
 // };
 
-// export default CubicGallery;
+export default CubicGallery;

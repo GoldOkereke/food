@@ -1,6 +1,6 @@
-// import { useState, useCallback } from "react";
-// import axios from "axios";
-// import { motion } from "framer-motion";
+import { useState, useCallback } from "react";
+import axios from "axios";
+import { motion } from "framer-motion";
 
 // const API_KEY = "50813686-ada5bb2af73bf0cc921e4583e";
 
@@ -84,4 +84,4 @@
 //     );
 // };
 
-// export default SearchInput;
+export default SearchInput;
