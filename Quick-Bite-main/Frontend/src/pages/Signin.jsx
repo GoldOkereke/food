@@ -30,7 +30,7 @@ export default function Signin() {
                 { withCredentials: true }
             );
 
-            if (!res.data.success) {
+            if (res.data.success) {
                 // Success animation before navigation
                 setTimeout(() => {
                     navigate('/home');
