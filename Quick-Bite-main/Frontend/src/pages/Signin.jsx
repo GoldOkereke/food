@@ -30,13 +30,13 @@ export default function Signin() {
                 { withCredentials: true }
             );
 
-            if (!res.data.success) {
+            if (res.data.success) {
+                setError(res.data.message);
+            } else {
                 // Success animation before navigation
                 setTimeout(() => {
                     navigate('/home');
                 }, 500);
-            } else {
-                setError(res.data.message);
             }
         } catch (err) {
             setError(err.response?.data?.message || 'Login failed. Please try again.');
