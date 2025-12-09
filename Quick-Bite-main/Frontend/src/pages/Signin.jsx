@@ -21,7 +21,7 @@ export default function Signin() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setError('');
-        setLoading(true);
+        setLoading(false);
 
        try {
     const res = await axios.post(
