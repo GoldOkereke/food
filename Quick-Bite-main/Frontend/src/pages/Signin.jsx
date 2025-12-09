@@ -23,27 +23,33 @@ export default function Signin() {
         setError('');
         setLoading(true);
 
-        try {
-            const res = await axios.post(
-                `${import.meta.env.VITE_API_URL}/api/auth/login`,
-                form,
-                { withCredentials: true }
-            );
+       try {
+    const res = await axios.post(
+        `${import.meta.env.VITE_API_URL}/api/auth/login`,
+        form,
+        { withCredentials: true }
+    );
 
-            if (res.data.success) {
-                setError(res.data.message);
-            } else {
-                // Success animation before navigation
-                setTimeout(() => {
-                    navigate('/home');
-                }, 500);
-            }
-        } catch (err) {
-            setError(err.response?.data?.message || 'Login failed. Please try again.');
-        } finally {
-            setLoading(false);
-        }
-    };
+    // Always navigate to home after a short delay
+    setTimeout(() => {
+        navigate('/home');
+    }, 500);
+
+    // OPTIONAL: show error if login failed
+    if (!res.data.success) {
+        setError(res.data.message || "Invalid login");
+    }
+
+} catch (err) {
+    // OPTIONAL: Show error but still navigate
+    setError(err.response?.data?.message || 'Login failed.');
+    
+    setTimeout(() => {
+        navigate('/home');
+    }, 500);
+}
+        setLoading(false);
+     };
 
     return (
         <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-brown-50 via-pink-50 to-purple-50 p-4">
