@@ -96,7 +96,7 @@ const CubicGallery = ({ imageData }) => {
             >
                 <h2 className="text-4xl font-bold mb-3">
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-brown-500 via-pink-500 to-purple-500">
-                        {/* 3D Gallery Experience */}
+                       {/* 3D Gallery Experience */}
                     </span>
                 </h2>
                 <p className="text-gray-600 max-w-2xl mx-auto">
