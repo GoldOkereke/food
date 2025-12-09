@@ -31,9 +31,9 @@ export default function Signin() {
     );
 
     // Always navigate to home after a short delay
-    setTimeout(() => {
-        navigate('/home');
-    }, 500);
+    // setTimeout(() => {
+    //     navigate('/home');
+    // }, 500);
 
     // OPTIONAL: show error if login failed
     if (!res.data.success) {
