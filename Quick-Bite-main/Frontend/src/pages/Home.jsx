@@ -36,7 +36,7 @@ const Home = () => {
             setUser(res.data.user);
         } catch (error) {
             console.error("Authentication error:", error);
-            navigate('/signin');
+            navigate('/home');
         }
     };
 
