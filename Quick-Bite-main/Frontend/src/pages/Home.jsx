@@ -61,38 +61,38 @@ const Home = () => {
         }
     }, [Item, user]);
 
-    if (!user) {
-        return (
-            <div className="min-h-screen bg-gradient-to-br from-brown-50 via-pink-50 to-purple-50 flex items-center justify-center">
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    className="flex flex-col items-center gap-4"
-                >
-                    <motion.div
-                        animate={{
-                            rotate: 360,
-                            scale: [1, 1.1, 1]
-                        }}
-                        transition={{
-                            rotate: {
-                                duration: 2,
-                                repeat: Infinity,
-                                ease: "linear"
-                            },
-                            scale: {
-                                duration: 1.5,
-                                repeat: Infinity,
-                                repeatType: "reverse"
-                            }
-                        }}
-                        className="w-16 h-16 rounded-full border-4 border-brown-500 border-t-transparent"
-                    />
-                    <p className="text-lg font-semibold bg-gradient-to-r from-brown-500 to-pink-500 bg-clip-text text-transparent">Loading...</p>
-                </motion.div>
-            </div>
-        );
-    }
+    // if (!user) {
+    //     return (
+    //         <div className="min-h-screen bg-gradient-to-br from-brown-50 via-pink-50 to-purple-50 flex items-center justify-center">
+    //             <motion.div
+    //                 initial={{ opacity: 0 }}
+    //                 animate={{ opacity: 1 }}
+    //                 className="flex flex-col items-center gap-4"
+    //             >
+    //                 <motion.div
+    //                     animate={{
+    //                         rotate: 360,
+    //                         scale: [1, 1.1, 1]
+    //                     }}
+    //                     transition={{
+    //                         rotate: {
+    //                             duration: 2,
+    //                             repeat: Infinity,
+    //                             ease: "linear"
+    //                         },
+    //                         scale: {
+    //                             duration: 1.5,
+    //                             repeat: Infinity,
+    //                             repeatType: "reverse"
+    //                         }
+    //                     }}
+    //                     className="w-16 h-16 rounded-full border-4 border-brown-500 border-t-transparent"
+    //                 />
+    //                 <p className="text-lg font-semibold bg-gradient-to-r from-brown-500 to-pink-500 bg-clip-text text-transparent">Loading...</p>
+    //             </motion.div>
+    //         </div>
+    //     );
+    // }
 
     return (
         <div className="min-h-screen bg-white  ">
